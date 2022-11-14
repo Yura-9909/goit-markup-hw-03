@@ -102,9 +102,7 @@ body {
     height: 600px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 94px;  
-    
+    justify-content: center;    
 }
 
 .title-page-caption{
@@ -128,7 +126,8 @@ body {
     width: 216px;
     height: 50px; 
     border-radius: 4px;
-    border: transparent;           
+    border: transparent; 
+    font-weight: 700          
 }
 
 .container-caption{
@@ -141,11 +140,16 @@ body {
 
 /*--sections our advantages--*/
 
+.about-container{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
 .advantages-items{
     list-style: none;
     height: 98px;
-    display: flex;
-    margin-bottom: 94px;    
+    display: flex;    
+    gap: 30px;        
 }
 
 .about-items{
@@ -176,7 +180,7 @@ body {
 
 .img-list{    
     font-size: 36px;
-    line-height: 1.666;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
@@ -190,18 +194,17 @@ body {
 
 /*---section teams-----*/
 
-.container-team{
-    height: 648px;   
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px; 
+}
+
+.container-team{    
     justify-content: center;
     display: flex;
     align-content: space-between;
     flex-wrap: nowrap;
-    flex-direction: column; 
-    background-color: #F5F4FA;   
-}
-
-.container-card{
-    background-color: #FFFFFF;
+    flex-direction: column;          
 }
 
 .teams-list{    
@@ -225,8 +228,9 @@ body {
     color: var(--blue-color);    
 }
 
-.foto-team{
-    margin-bottom: 30px;
+.card-info{
+    padding-top: 30px;
+    padding-bottom: 30px; 
 }
 
 .team-card{
@@ -253,14 +257,14 @@ body {
 /*--------------footer---------------*/
 
 .footer{
-    background-color: #2F303A;
-    height: 252px;
+    background-color: #2F303A;    
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
-.footer-logo{
-    margin-top: 60px;
+.footer-logo{   
     margin-bottom: 20px;  
 }
 
@@ -271,41 +275,56 @@ body {
     letter-spacing: 0.03em;
 }
 
-.footer-nav{
-    gap: 9px;
-}
-
 .address{    
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14px;      
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 9px;
     }
 
 .footer-items{
-    list-style: none;
-
+    list-style: none;    
 }
-.footer-link{   
+
+.footer-mail{   
     font-size: 14px;
     line-height: 1.714;      
     letter-spacing: 0.03em;    
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+    text-decoration: none;  
+    margin-bottom: 9px;  
 }
 
-.footer-link:hover{
+.footer-mail:hover{
     color: var(--blue-color); 
 }
-.footer-link:active{
+.footer-mail:active{
     color: #000; 
 }
+
+.footer-tel{   
+    font-size: 14px;
+    line-height: 1.714;      
+    letter-spacing: 0.03em;    
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;       
+}
+
+.footer-tel:hover{
+    color: var(--blue-color); 
+}
+.footer-tel:active{
+    color: #000; 
+}
+
+
 /*--------------footer---------------*/
 
 /*------------portfolio--------------*/
 
 .container-portfolio{
-    margin-top: 94px;
+    padding-top: 94px;
+    border-top: 1px solid #F5F5F5;    
 }
 
 .box-btn-items{
@@ -360,7 +379,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-items{
@@ -375,8 +394,7 @@ body {
     font-size: 18px;
     line-height: 2;    
     letter-spacing: 0.06em;    
-    color: #212121;
-    padding: 20px 2px 4px 24px;
+    color: #212121;    
 }
 
 .portfolio-text{ 
@@ -384,5 +402,10 @@ body {
     line-height: 1.875;
     letter-spacing: 0.03em;    
     color: var(--uptitle-color);
-    padding: 0px 24px 20px 24px;
+}
+
+.portfolio-content{
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
 }

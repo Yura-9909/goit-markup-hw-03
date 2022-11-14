@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/modern-normalize/modern-normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>goit-markup-hw-03</title>
     </head>
     <body>
@@ -29,15 +29,15 @@
         </header>
 
         <main>
-            <section class="title-page container">                
-                <div class="container-caption">
+            <section class="title-page">                
+                <div class="container container-caption">
                     <h1 class="title-page-caption">Ефективні рішення для вашого бізнесу</h1>
                     <button class="title-btn" type="button">Замовити послугу</button>      
                 </div>          
             </section>                            
                       
             <section>
-                <div class="container">
+                <div class="container about-container">
                     <h2 hidden>our advantages</h2>
                     <ul class="advantages-items">
                         <li class="about-items">
@@ -62,7 +62,7 @@
 
             <section>
                 <div class="container container-img">
-                    <h4 class="img-list">Чим ми займаємося</h4>
+                    <h2 class="img-list">Чим ми займаємося</h2>
                     <ul class="img-items">
                         <li>
                             <img src="./images/laptop.jpg" width="370" height="294" alt="work from a laptop">
@@ -77,38 +77,46 @@
                 </div>
             </section>
 
-            <section>
+            <section class="team">
                 <div class="container container-team">
-                    <h5 class="teams-list">Наша команда</h5>
+                    <h2 class="teams-list">Наша команда</h2>
                     <ul class="teams-items">
                     
-                        <li class="container-card">
+                        <li>
                             <a class="team-card-link" href="#" target="_blank">
                             <img class="foto-team" src="./images/Ігор_Дем'яненко.jpg" width="270" height="260" alt="Ігор Дем'яненко">
-                            <h6 class="team-card">Ігор Дем'яненко</h6>
-                            <p class="team-card-prof">Product Designer</p>
-                        </a>
+                            <div class="card-info">
+                                <h3 class="team-card">Ігор Дем'яненко</h3>
+                                <p class="team-card-prof">Product Designer</p>
+                            </div>
+                            </a>
                         </li>
-                        <li class="container-card">
+                        <li>
                             <a class="team-card-link" href="#" target="_blank">
                             <img class="foto-team" src="./images/Ольга_Рєпіна.jpg" width="270" height="260" alt="Ольга Рєпіна">
-                            <h6 class="team-card">Ольга Рєпіна</h6>
-                            <p class="team-card-prof">Frontend Developer</p>
-                        </a>
+                            <div class="card-info">
+                                <h3 class="team-card">Ольга Рєпіна</h3>
+                                <p class="team-card-prof">Frontend Developer</p>
+                            </div>
+                            </a>
                         </li>
-                        <li class="container-card">
+                        <li >
                             <a class="team-card-link" href="#" target="_blank">
                             <img class="foto-team" src="./images/Микола_Тарасов.jpg" width="270" height="260" alt="Микола Тарасов">
-                            <h6 class="team-card">Микола Тарасов</h6>
-                            <p class="team-card-prof">Marketing</p>
-                        </a>
+                            <div class="card-info">
+                                <h3 class="team-card">Микола Тарасов</h3>
+                                <p class="team-card-prof">Marketing</p>
+                            </div>
+                            </a>
                         </li>
-                        <li class="container-card">
+                        <li>
                             <a class="team-card-link" href="#" target="_blank">
                             <img class="foto-team" src="./images/Михайло_Єрмаков.jpg" width="270" height="260" alt="Михайло Єрмаков">
-                            <h6 class="team-card">Михайло Єрмаков</h6>
-                            <p class="team-card-prof">UI Designer</p>
-                        </a>
+                            <div class="card-info">
+                                <h3 class="team-card">Михайло Єрмаков</h3>
+                                <p class="team-card-prof">UI Designer</p>
+                            </div>
+                            </a>
                         </li>
                         
                     </ul>
@@ -122,17 +130,20 @@
                 <a class="logo-Web" href="./index.html">Web<span class="logo-Studio-footer">Studio</span></a>
             </div>
             
-            <div class="footer-nav">
-                <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-                <ul class="footer-items">
-                    <li>
-                        <a class="footer-link" href="#" target="_blank" rel="noopener noreferrer">info@devstudio.com</a> 
-                    </li>
-                    <li>
-                        <a class="footer-link" href="tel:+380961111111">+380961111111</a>
-                    </li>
-                </ul>
-            </div>
+            
+            <ul class="footer-items">
+
+                <li>
+                    <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+                </li>
+                <li>
+                    <a class="footer-mail" href="#" target="_blank" rel="noopener noreferrer">info@devstudio.com</a> 
+                </li>
+                <li>
+                    <a class="footer-tel" href="tel:+380961111111">+380961111111</a>
+                </li>
+            </ul>
+            
             
         </footer>
     </body>
