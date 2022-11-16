@@ -49,7 +49,7 @@ body {
 }
 
 .navigation{
-    margin-right: 344px;
+    margin-right: auto;
 }
 
 .nav-items{
@@ -248,8 +248,7 @@ body {
     line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;    
-    color: var(--uptitle-color);
-    margin-bottom: 30px;        
+    color: var(--uptitle-color);           
 }
 
 /*---------------main----------------*/
@@ -280,6 +279,7 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-bottom: 9px;
+    line-height: 1.714;
     }
 
 .footer-items{
@@ -317,15 +317,24 @@ body {
     color: #000; 
 }
 
+.footer-nav{
+    margin-bottom: 9px;
+
+}
+
 
 /*--------------footer---------------*/
 
 /*------------portfolio--------------*/
 
-.container-portfolio{
-    padding-top: 94px;
-    border-top: 1px solid #F5F5F5;    
+.header-line{
+    border-bottom:1px solid #ECECEC;
 }
+
+.section-portfolio{
+    padding-top: 94px;  
+}
+
 
 .box-btn-items{
     list-style: none; 
