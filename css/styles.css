@@ -98,11 +98,12 @@ body {
 /*---------------main----------------*/
 
 .title-page{
-    background-color: #2F303A;
-    height: 600px;
+    background-color: #2F303A;    
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    padding-top: 200px;
+    padding-bottom: 200px;   
 }
 
 .title-page-caption{
@@ -175,7 +176,7 @@ body {
 /*----sectons img-----*/
 
 .container-img{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .img-list{    
@@ -332,7 +333,8 @@ body {
 }
 
 .section-portfolio{
-    padding-top: 94px;  
+    padding-top: 94px; 
+    padding-bottom: 94px; 
 }
 
 
@@ -387,8 +389,7 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding-bottom: 94px;
+    gap: 30px;    
 }
 
 .portfolio-items{
